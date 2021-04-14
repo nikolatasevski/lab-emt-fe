@@ -1,0 +1,21 @@
+#mainContainer {
+    flex-grow: 1;
+    padding: 0 2em;
+}
+
+@media (min-width: 600px) {
+    #mainContainer {
+        flex-grow: 1;
+        padding: 0 2em;
+    }
+}
+
+#rootContainer {
+    margin-left: 0;
+}
+
+@media (min-width: 600px) {
+    #rootContainer {
+        margin-left: 240px;
+    }
+}

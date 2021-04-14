@@ -1,0 +1,9 @@
+.MuiListItemIcon-root {
+    color: white !important;
+}
+
+#header-img {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
