@@ -129,9 +129,6 @@ const Books = (props) => {
                                             <IconButton onClick={() => handleClickOpenDeleteDialog(book)}>
                                                 <DeleteIcon color={"secondary"}/>
                                             </IconButton>
-                                            <DeleteDialog currentBook={currentBook}
-                                                          open={openDeleteDialog}
-                                                          handleClose={handleCloseDeleteDialog}/>
                                         </TableCell> : null : null
                                 }
                             </TableRow>
@@ -151,6 +148,9 @@ const Books = (props) => {
                     </TableFooter>
                 </Table>
             </TableContainer>
+            { currentBook ? <DeleteDialog currentBook={currentBook}
+                                          open={openDeleteDialog}
+                                          handleClose={handleCloseDeleteDialog}/> : null}
         </React.Fragment>
     );
 }
